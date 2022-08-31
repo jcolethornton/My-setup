@@ -1,10 +1,15 @@
+# OMF Shell
+```
+sudo apt install fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+omf install bobthefish
+cp config.fish ~/.config/fish/config.fish
+```
+
 # TMUX setup
 First install TPM plugin manager:
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
-Replace config file with config from this repo 
-```
 cp tmux.conf ~/.tmux.conf
 ```
 
@@ -13,7 +18,10 @@ This is my prefered neovim config
 
 ## Install Neovim stable
 ```
-$ https://github.com/neovim/neovim
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:neovim-ppa/stable -y
+sudo apt-get update
+sudo apt install neovim -y
 ```
 
 ## Clone Astrovim config
@@ -23,34 +31,19 @@ nvim +PackerSync
 ```
 
 ## Install LSP
-Enter :LspInstall followed by the name of the server you want to install
+Enter :LspInstall followed by the name of the server you want to install  
 Example: :LspInstall pyright
 
 ## Install language parsers
-Enter :TSInstall followed by the name of the language you want to install
+Enter :TSInstall followed by the name of the language you want to install  
 Example: :TSInstall python
 
-## Additional plugins 
+## User settings 
 ```
--- Tmux intergration
-{'christoomey/vim-tmux-navigator'},
--- Indent Lines (not in use)
-{'lukas-reineke/indent-blankline.nvim'},
--- Dad bod UI for tables (SQL/DF etc)
-{'kristijanhusak/vim-dadbod-ui'},
-{'tpope/vim-dadbod'},
--- Ipython support :IPython to open console <F5> to run selection 
-{'bfredl/nvim-ipy'}
-```
-
-## Additional mappings
-```
-cat nvim-mappings.lua >> ~/.config/nvim/lua/core/mappings.lua
-```
-
-## Treesitter config
-```
-cp nvim-treesitter.lua ~/.config/nvim/lua/configs/treesitter.lua
+mkdir -p ~/.config/astronvim/lua/user
+cp -r init.lua ~/.config/astronvim/lua/user/
+cp mappings.lua ~/.config/nvim/lua/core/mappings.lua
+cp treesitter.lua ~/.config/nvim/lua/configs/treesitter.lua
 ```
 
 ## Clipboard
