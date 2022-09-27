@@ -18,7 +18,7 @@ local config = {
 	},
 
 	-- Set colorscheme
-	colorscheme = "default_theme",
+	colorscheme = "github_dark",
 
 	-- Override highlight groups in any theme
 	highlights = {
@@ -36,7 +36,7 @@ local config = {
 	-- set vim options here (vim.<first_key>.<second_key> =  value)
 	options = {
 		opt = {
-			relativenumber = false, -- sets vim.opt.relativenumber
+			relativenumber = true, -- sets vim.opt.relativenumber
 		},
 		g = {
 			mapleader = " ", -- sets vim.g.mapleader
@@ -83,9 +83,7 @@ local config = {
 		init = {
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
-
-			-- You can also add new plugins here as well:
-			-- -- Tmux intergration
+			-- Tmux intergration
 			{ "christoomey/vim-tmux-navigator" },
 			-- Indent Lines (not in use)
 			{ "lukas-reineke/indent-blankline.nvim" },
@@ -94,6 +92,10 @@ local config = {
 			{ "tpope/vim-dadbod" },
 			-- Ipython support :IPython to open console <F5> to run selection
 			{ "bfredl/nvim-ipy" },
+			-- Multi cursor
+			{ "mg979/vim-visual-multi" },
+			-- theme
+			{ "projekt0n/github-nvim-theme" },
 		},
 		-- All other entries override the setup() call for default plugins
 		["null-ls"] = function(config)
