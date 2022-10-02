@@ -7,9 +7,8 @@ cp config.fish ~/.config/fish/config.fish
 
 # TMUX setup
 
-First install TPM plugin manager:
-
 ```
+sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp tmux.conf ~/.tmux.conf
 ```
