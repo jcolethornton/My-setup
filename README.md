@@ -3,6 +3,7 @@
 ```
 sudo apt install fish
 cp config.fish ~/.config/fish/config.fish
+chsh -s /usr/bin/fish
 ```
 
 # TMUX setup

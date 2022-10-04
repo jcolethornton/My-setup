@@ -138,7 +138,7 @@ local config = {
 		},
 		-- use mason-tool-installer to configure DAP/Formatters/Linter installation
 		["mason-tool-installer"] = {
-			ensure_installed = { "prettier", "stylua" },
+			ensure_installed = { "prettier" },
 		},
 		packer = {
 			compile_path = vim.fn.stdpath("data") .. "/packer_compiled.lua",
