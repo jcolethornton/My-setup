@@ -1,7 +1,9 @@
 # OMF Shell
 
 ```
-sudo apt install fish
+sudo add-apt-repository ppa:fish-shell/release-3
+sudo apt-get update
+sudo apt-get install fish
 cp config.fish ~/.config/fish/config.fish
 chsh -s /usr/bin/fish
 ```
@@ -12,6 +14,16 @@ chsh -s /usr/bin/fish
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp tmux.conf ~/.tmux.conf
+```
+
+# Python enviroment
+
+Use pipenv with pipes
+
+```
+pip install --user pipx
+pipx install pipenv
+pip3 install pipenv-pipes --user
 ```
 
 # NeoVim setup
@@ -55,6 +67,7 @@ cp treesitter.lua ~/.config/nvim/lua/configs/treesitter.lua
 
 ## Clipboard
 
+Only use if clipboard doesn't work:
 To use the system clipboard if using WSL First install a local copy of neovim on windows.
 Then replace $NEOVIM_WIN_DIR with the path to our Neovim Windows installation, e.g. /mnt/c/Program Files/Neovim.
 The command can then be symlinked using:
