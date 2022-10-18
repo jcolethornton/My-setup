@@ -96,6 +96,8 @@ local config = {
 			{ "projekt0n/github-nvim-theme" },
 			-- Vimspector
 			{ "puremourning/vimspector" },
+			-- Sudo suda
+			{ "lambdalisue/suda.vim" },
 			-- { "andweeb/presence.nvim" },
 			-- {
 			--   "ray-x/lsp_signature.nvim",
