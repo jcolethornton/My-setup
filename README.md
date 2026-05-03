@@ -1,6 +1,6 @@
 # TMUX setup
 
-```
+```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp tmux.conf ~/.tmux.conf
 ```
@@ -10,11 +10,18 @@ cp tmux.conf ~/.tmux.conf
 Use pyenv
 https://github.com/pyenv/pyenv
 
+# Bash
+Once the above has been setup then add this to bashrc
+```bash
+cat bashrc >> ~/.bashrc
+source ~/.bashrc
+```
+
 # NeoVim setup
 
 Nvim config
 
-```
+```bash
 cp config/nvim ~/.config/nvim
 ```
 
