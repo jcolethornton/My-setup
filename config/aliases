@@ -1,0 +1,7 @@
+alias vpn="sudo /home/jaryd/.config/vpn.sh"
+alias mux="tmuxinator"
+alias ipython="python3 -m IPython"
+alias c="clear"
+alias nv="nvim"
+alias admin_browser="sudo -u abc.jaryd.thornton@2degrees.nz env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY brave_browser"
+
