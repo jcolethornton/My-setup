@@ -1,5 +1,6 @@
 # TMUX setup
 
+First install tmux then:
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp tmux.conf ~/.tmux.conf
@@ -9,6 +10,10 @@ cp tmux.conf ~/.tmux.conf
 
 Use pyenv
 https://github.com/pyenv/pyenv
+
+# Prompt
+Install the bash prompt
+https://github.com/magicmonty/bash-git-prompt
 
 # Bash
 Once the above has been setup then add this to bashrc
